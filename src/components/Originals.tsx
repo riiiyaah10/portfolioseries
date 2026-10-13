@@ -23,7 +23,7 @@ function Intro() {
       </p>
       <RevealText as="h2" text="ORIGINALS" className="font-display text-[clamp(3.5rem,9vw,8rem)] leading-[0.85] text-bone" />
       <p className="mt-4 max-w-sm text-[15px] leading-relaxed text-mist">
-        Four productions from the resume — e-commerce, luxury lifestyle, CRM and real-time security compliance. Open any title for the full story and live demo.
+        Three productions from the resume — luxury lifestyle, CRM and real-time security compliance. Open any title for the full story and live demo.
       </p>
       <p className="mt-6 hidden text-xs tracking-[0.24em] text-smoke lg:block">SCROLL TO BROWSE →</p>
     </div>

@@ -41,17 +41,6 @@ export function ProjectArt({ project, className = '' }: { project: Project; clas
         </defs>
         <circle cx="290" cy="120" r="130" fill={`url(#g-${project.id})`} />
 
-        {project.motif === 'diamond' && (
-          <g transform="translate(230 46)" fill="none" stroke={a} strokeOpacity="0.9">
-            <polygon points="60,6 108,44 60,154 12,44" strokeWidth="2.5" />
-            <polygon points="60,6 84,44 60,154 36,44" strokeWidth="1.6" strokeOpacity="0.65" />
-            <line x1="12" y1="44" x2="108" y2="44" strokeWidth="2" strokeOpacity="0.75" />
-            <line x1="60" y1="6" x2="60" y2="154" strokeWidth="1.2" strokeDasharray="4 4" strokeOpacity="0.5" />
-            <circle cx="60" cy="44" r="4.5" fill={a} />
-            <path d="M60 44 L108 44 L60 154" strokeWidth="1" strokeOpacity="0.4" />
-            <path d="M60 44 L12 44 L60 154" strokeWidth="1" strokeOpacity="0.4" />
-          </g>
-        )}
 
         {project.motif === 'candle' && (
           <g transform="translate(240 50)" fill="none" stroke={a}>

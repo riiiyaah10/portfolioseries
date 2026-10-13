@@ -63,8 +63,8 @@ export const experience = [
     place: 'Vadodara, Gujarat',
     period: '2022 – Present',
     points: [
-      'Built and deployed 4 live, full-stack web applications across Vercel and Render with end-to-end integration and responsive design.',
-      'Implemented secure user authentication, RESTful APIs, database persistence (SQLite, MySQL, MongoDB), and automated compliance verification.',
+      'Built and deployed 3 live, full-stack web applications across Vercel and Render with end-to-end integration and responsive design.',
+      'Implemented secure user authentication, RESTful APIs, database persistence (PostgreSQL, SQLite, MySQL, MongoDB), and automated compliance verification.',
       'Applied automation, web scraping, computer vision, and NLP concepts to solve practical engineering and compliance challenges.',
     ],
   },
@@ -85,39 +85,10 @@ export type Project = {
   liveUrl?: string;
   github?: string;
   palette: Palette;
-  motif: 'diamond' | 'candle' | 'crm' | 'shield';
+  motif: 'candle' | 'crm' | 'shield';
 };
 
 export const projects: Project[] = [
-  {
-    id: 'isya-jewellery',
-    title: 'ISYA Jewellery',
-    year: '2025',
-    genre: 'E-Commerce • Next.js • Storefront',
-    logline: 'Modern jewellery storefront focused on silver and lab-grown diamond collections with fluid interactive discovery.',
-    stack: ['Next.js', 'React.js', 'Tailwind CSS', 'Vercel'],
-    liveUrl: 'https://jewellery-store-nu.vercel.app/',
-    github: 'https://github.com/riiiyaah10',
-    build: [
-      'Developed a modern jewellery storefront focused on silver and lab-grown diamond collections with high-performance responsive UI.',
-      'Implemented dynamic catalog browsing, fluid animations, and mobile-first user experience using Next.js and Tailwind CSS.',
-      'Deployed the application to Vercel with automated CI/CD and optimized asset delivery for lightning-fast catalog exploration.',
-    ],
-    features: [
-      'Silver & lab-grown diamond collections showcase',
-      'Modern, highly responsive e-commerce storefront',
-      'Interactive product discovery and brand presentation',
-      'Optimized Core Web Vitals and Vercel edge deployment',
-    ],
-    metrics: [
-      { value: 'Live', label: 'production deployment' },
-      { value: '100%', label: 'mobile responsive' },
-      { value: 'Next.js', label: 'modern React stack' },
-      { value: 'Instant', label: 'catalog loading' },
-    ],
-    palette: { from: '#1a1024', via: '#5a2d78', to: '#0a0610', accent: '#d894ff' },
-    motif: 'diamond',
-  },
   {
     id: 'house-of-vyora',
     title: 'House of Vyora',
@@ -219,9 +190,9 @@ export type Achievement = {
 export const achievements: Achievement[] = [
   {
     id: 'deployed-apps',
-    title: '4 Live Web Apps',
+    title: '3 Live Web Apps',
     org: 'Vercel & Render',
-    detail: 'Built, deployed, and maintain 4 live web applications accessible publicly, demonstrating end-to-end full-stack mastery.',
+    detail: 'Built, deployed, and maintain 3 live web applications accessible publicly, demonstrating end-to-end full-stack mastery.',
     laurel: 'Live Production',
   },
   {
@@ -272,11 +243,6 @@ export const certifications: Certification[] = [
     issuer: 'JAAFR',
     name: 'Research Publication: "BrainNBody" (Journal of Advance and Future Research, Nov 2025)',
     link: 'https://github.com/riiiyaah10',
-  },
-  {
-    issuer: 'Vercel',
-    name: 'ISYA — Modern Silver & Lab-Grown Diamond Jewellery (Live Production)',
-    link: 'https://jewellery-store-nu.vercel.app/',
   },
   {
     issuer: 'Vercel',
@@ -340,6 +306,7 @@ export const skillCategories: SkillCategory[] = [
     title: 'Databases',
     subtitle: 'Relational & document stores',
     skills: [
+      { name: 'PostgreSQL', mono: 'Pg', note: 'Relational' },
       { name: 'MySQL', mono: 'My' },
       { name: 'MongoDB', mono: 'Mg' },
       { name: 'SQLite', mono: 'Sq' },
@@ -394,25 +361,26 @@ export const skillCategories: SkillCategory[] = [
 export const skillEvidence: Record<string, string[]> = {
   Python: ['Web Compliance Checker', 'Stanford ML Certification', 'Automation & Web Scraping'],
   Java: ['B.Tech CSE Core', 'OOPs & Algorithm Implementation'],
-  JavaScript: ['ISYA Jewellery', 'House of Vyora', 'Nexora CRM Dashboard'],
-  'React.js': ['ISYA Jewellery', 'House of Vyora', 'Nexora CRM Dashboard'],
-  'Next.js': ['ISYA Jewellery Storefront', 'House of Vyora Luxury Candles'],
-  'Tailwind CSS': ['ISYA Jewellery', 'House of Vyora'],
-  HTML5: ['ISYA Jewellery', 'House of Vyora', 'Nexora CRM'],
+  JavaScript: ['House of Vyora', 'Nexora CRM Dashboard'],
+  'React.js': ['House of Vyora', 'Nexora CRM Dashboard'],
+  'Next.js': ['House of Vyora Luxury Candles'],
+  'Tailwind CSS': ['House of Vyora Luxury Styling'],
+  HTML5: ['House of Vyora', 'Nexora CRM'],
   CSS3: ['Responsive Web Design', 'House of Vyora Luxury Styling'],
-  'Responsive Web Design': ['ISYA Jewellery', 'House of Vyora', 'Nexora CRM'],
+  'Responsive Web Design': ['House of Vyora', 'Nexora CRM'],
   Flask: ['Web Compliance Checker (Live on Render)'],
   Django: ['Nexora CRM & Customer Management System'],
   'Django REST Framework': ['Nexora CRM RESTful API Endpoints'],
   'Node.js': ['Full-Stack Web Services & Tooling'],
   'RESTful APIs': ['Nexora CRM', 'Web Compliance Checker'],
   'Web Scraping': ['Web Compliance Checker Automated Audits'],
+  PostgreSQL: ['Relational Database Architecture', 'Schema Design & SQL Optimization'],
   MySQL: ['B.Tech DBMS Curriculum & Relational Storage'],
   MongoDB: ['Full-Stack Document Database Projects'],
   SQLite: ['Nexora CRM Database Backend'],
-  Git: ['Version Control across all 4 deployed projects'],
+  Git: ['Version Control across all deployed projects'],
   GitHub: ['github.com/riiiyaah10 repository management'],
-  Vercel: ['ISYA Jewellery', 'House of Vyora', 'Nexora CRM'],
+  Vercel: ['House of Vyora', 'Nexora CRM'],
   Render: ['Web Compliance Checker live web service'],
   Postman: ['API Testing for Nexora CRM & Compliance Checker'],
   'Prompt Engineering': ['Applied AI & LLM Workflows'],
@@ -505,7 +473,7 @@ export const seasons: Season[] = [
       {
         code: 'S03 E01',
         title: 'The Backend Engine',
-        description: 'Architecting RESTful APIs using Python, Flask, and Django with robust database integration across SQLite, MySQL, and MongoDB.',
+        description: 'Architecting RESTful APIs using Python, Flask, and Django with robust database integration across SQLite, PostgreSQL, MySQL, and MongoDB.',
         tags: ['Python', 'Flask', 'Django', 'REST APIs'],
         runtime: '2024 – 2025',
         palette: amber,
@@ -522,20 +490,12 @@ export const seasons: Season[] = [
   },
   {
     number: 4,
-    title: 'The 4 Live Originals',
+    title: 'The 3 Live Originals',
     period: '2025 – 2026',
-    synopsis: 'Building and shipping four full-stack applications to public production on Vercel and Render.',
+    synopsis: 'Building and shipping three full-stack applications to public production on Vercel and Render.',
     episodes: [
       {
         code: 'S04 E01',
-        title: 'ISYA Jewellery',
-        description: 'Modern storefront focused on silver and lab-grown diamond collections built with Next.js, React.js, and Tailwind CSS.',
-        tags: ['Next.js', 'Tailwind CSS', 'Vercel'],
-        runtime: 'Live on Vercel',
-        palette: violet,
-      },
-      {
-        code: 'S04 E02',
         title: 'House of Vyora',
         description: 'Luxury handcrafted soy candle website showcasing sensory brand presentation and curated exhibitions.',
         tags: ['Next.js', 'Tailwind CSS', 'Vercel'],
@@ -543,7 +503,7 @@ export const seasons: Season[] = [
         palette: amber,
       },
       {
-        code: 'S04 E03',
+        code: 'S04 E02',
         title: 'Nexora CRM',
         description: 'Full-stack customer management platform with authentication, RESTful APIs in Django REST Framework, and a responsive React dashboard.',
         tags: ['Django', 'React.js', 'DRF', 'SQLite'],
@@ -551,7 +511,7 @@ export const seasons: Season[] = [
         palette: ocean,
       },
       {
-        code: 'S04 E04',
+        code: 'S04 E03',
         title: 'Web Compliance Checker',
         description: 'Real-time compliance auditing web service analyzing GDPR rules, cookie policies, HTTPS enforcement, and security headers.',
         tags: ['Python', 'Flask', 'Web Scraping', 'Render'],
@@ -600,13 +560,13 @@ export const topPicks: TopPick[] = [
   { label: 'Primary language', title: 'Python', detail: 'Core language for Flask, automation & Machine Learning', palette: amber },
   { label: 'Flagship tool', title: 'Web Compliance Checker', detail: 'Real-time GDPR & security scanner live on Render', palette: crimson },
   { label: 'Enterprise system', title: 'Nexora CRM', detail: 'Full-stack platform with React.js & Django REST Framework', palette: ocean },
-  { label: 'Luxury storefront', title: 'ISYA Jewellery', detail: 'Silver & lab-grown diamond collections on Next.js', palette: violet },
+  { label: 'Relational database', title: 'PostgreSQL', detail: 'Advanced relational schema design, indexing & SQL queries', palette: violet },
   { label: 'Curated lifestyle', title: 'House of Vyora', detail: 'Handcrafted luxury soy candles live on Vercel', palette: amber },
   { label: 'Research paper', title: 'BrainNBody', detail: 'Published in JAAFR (Vol. 3, Issue 11, Nov 2025)', palette: jade },
   { label: 'Stanford credential', title: 'Supervised ML', detail: 'Certified by Stanford University & DeepLearning.AI', palette: crimson },
   { label: 'Academic high', title: '92% in Class X', detail: 'CBSE Board distinction at Sant Atulanand Convent', palette: jade },
   { label: 'IoT credential', title: 'NPTEL IoT', detail: 'Introduction to Internet of Things certified (2025)', palette: ocean },
-  { label: 'Production record', title: '4 Live Web Apps', detail: 'Publicly accessible web applications on Vercel & Render', palette: violet },
+  { label: 'Production record', title: '3 Live Web Apps', detail: 'Publicly accessible web applications on Vercel & Render', palette: violet },
 ];
 
 /** Slides for the "▶ Play Intro" cinematic sequence. */
@@ -628,14 +588,13 @@ export const introSlides: IntroSlide[] = [
   {
     kicker: 'Core Stack',
     title: 'Python, Java & React',
-    lines: ['Frontend: React.js, Next.js, Tailwind CSS', 'Backend: Flask, Django, Django REST Framework, RESTful APIs', 'Databases: MySQL, MongoDB, SQLite'],
-    chips: ['Python', 'Java', 'Flask', 'Django', 'React.js', 'Next.js'],
+    lines: ['Frontend: React.js, Next.js, Tailwind CSS', 'Backend: Flask, Django, Django REST Framework, RESTful APIs', 'Databases: PostgreSQL, MySQL, MongoDB, SQLite'],
+    chips: ['Python', 'Java', 'Flask', 'Django', 'React.js', 'PostgreSQL'],
   },
   {
     kicker: 'Originals',
-    title: 'Four Live Apps',
+    title: 'Three Live Apps',
     lines: [
-      'ISYA — Silver & Lab-Grown Diamond Jewellery (Next.js)',
       'House of Vyora — Handcrafted Luxury Soy Candles (Next.js)',
       'Nexora — Full-Stack CRM & Customer Management (React + Django)',
       'Web Compliance Checker — GDPR & Security Scanner (Flask + Render)',
@@ -656,7 +615,7 @@ export const introSlides: IntroSlide[] = [
     lines: [
       'Supervised Machine Learning — DeepLearning.AI & Stanford University',
       'Introduction to Internet of Things — NPTEL (2025)',
-      '4 Live Apps Deployed on Vercel & Render',
+      '3 Live Apps Deployed on Vercel & Render',
     ],
   },
   {
